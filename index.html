@@ -40,11 +40,11 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/GEOMANTAS_3.js"></script>
-        <script src="data/Trajetopercorrido_4.js"></script>
-        <script src="data/MapeamentoNoite_5.js"></script>
-        <script src="data/MapeamentoTarde_6.js"></script>
-        <script src="data/MapeamentoManh_7.js"></script>
+        <script src="data/GEOMANTAS_4.js"></script>
+        <script src="data/Trajetopercorrido_5.js"></script>
+        <script src="data/MapeamentoNoite_6.js"></script>
+        <script src="data/MapeamentoTarde_7.js"></script>
+        <script src="data/MapeamentoManh_8.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -111,19 +111,28 @@
                                               {pane: 'pane_NDVI17012025_0'});
         bounds_group.addLayer(layer_NDVI17012025_0);
         map.addLayer(layer_NDVI17012025_0);
-        map.createPane('pane_NDVI09042017_1');
-        map.getPane('pane_NDVI09042017_1').style.zIndex = 401;
-        var img_NDVI09042017_1 = 'data/NDVI09042017_1.png';
-        var img_bounds_NDVI09042017_1 = [[-13.017399972904222,-38.6573547528444],[-12.742174684555636,-38.30424731551156]];
-        var layer_NDVI09042017_1 = new L.imageOverlay(img_NDVI09042017_1,
-                                              img_bounds_NDVI09042017_1,
-                                              {pane: 'pane_NDVI09042017_1'});
-        bounds_group.addLayer(layer_NDVI09042017_1);
-        map.addLayer(layer_NDVI09042017_1);
-        map.createPane('pane_GoogleSatellite_2');
-        map.getPane('pane_GoogleSatellite_2').style.zIndex = 402;
-        var layer_GoogleSatellite_2 = L.tileLayer('http://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            pane: 'pane_GoogleSatellite_2',
+        map.createPane('pane_NDVI_209042017_1');
+        map.getPane('pane_NDVI_209042017_1').style.zIndex = 401;
+        var img_NDVI_209042017_1 = 'data/NDVI_209042017_1.png';
+        var img_bounds_NDVI_209042017_1 = [[-13.017399972497312,-38.65735475284493],[-12.74217468416053,-38.30424731551269]];
+        var layer_NDVI_209042017_1 = new L.imageOverlay(img_NDVI_209042017_1,
+                                              img_bounds_NDVI_209042017_1,
+                                              {pane: 'pane_NDVI_209042017_1'});
+        bounds_group.addLayer(layer_NDVI_209042017_1);
+        map.addLayer(layer_NDVI_209042017_1);
+        map.createPane('pane_NDVI09042017_2');
+        map.getPane('pane_NDVI09042017_2').style.zIndex = 402;
+        var img_NDVI09042017_2 = 'data/NDVI09042017_2.png';
+        var img_bounds_NDVI09042017_2 = [[-13.017399972904222,-38.6573547528444],[-12.742174684555636,-38.30424731551156]];
+        var layer_NDVI09042017_2 = new L.imageOverlay(img_NDVI09042017_2,
+                                              img_bounds_NDVI09042017_2,
+                                              {pane: 'pane_NDVI09042017_2'});
+        bounds_group.addLayer(layer_NDVI09042017_2);
+        map.addLayer(layer_NDVI09042017_2);
+        map.createPane('pane_GoogleSatellite_3');
+        map.getPane('pane_GoogleSatellite_3').style.zIndex = 403;
+        var layer_GoogleSatellite_3 = L.tileLayer('http://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_3',
             opacity: 0.636,
             attribution: '',
             minZoom: 1,
@@ -131,9 +140,9 @@
             minNativeZoom: 0,
             maxNativeZoom: 22
         });
-        layer_GoogleSatellite_2;
-        map.addLayer(layer_GoogleSatellite_2);
-        function pop_GEOMANTAS_3(feature, layer) {
+        layer_GoogleSatellite_3;
+        map.addLayer(layer_GoogleSatellite_3);
+        function pop_GEOMANTAS_4(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if (typeof layer.closePopup == 'function') {
@@ -170,15 +179,15 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_GEOMANTAS_3_0() {
+        function style_GEOMANTAS_4_0() {
             return {
-                pane: 'pane_GEOMANTAS_3',
+                pane: 'pane_GEOMANTAS_4',
                 interactive: true,
             }
         }
-        function style_GEOMANTAS_3_1() {
+        function style_GEOMANTAS_4_1() {
             return {
-                pane: 'pane_GEOMANTAS_3',
+                pane: 'pane_GEOMANTAS_4',
                 opacity: 1,
                 color: 'rgba(128,14,16,1.0)',
                 dashArray: '',
@@ -189,21 +198,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_GEOMANTAS_3');
-        map.getPane('pane_GEOMANTAS_3').style.zIndex = 403;
-        map.getPane('pane_GEOMANTAS_3').style['mix-blend-mode'] = 'normal';
-        var layer_GEOMANTAS_3 = new L.geoJson.multiStyle(json_GEOMANTAS_3, {
+        map.createPane('pane_GEOMANTAS_4');
+        map.getPane('pane_GEOMANTAS_4').style.zIndex = 404;
+        map.getPane('pane_GEOMANTAS_4').style['mix-blend-mode'] = 'normal';
+        var layer_GEOMANTAS_4 = new L.geoJson.multiStyle(json_GEOMANTAS_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_GEOMANTAS_3',
-            layerName: 'layer_GEOMANTAS_3',
-            pane: 'pane_GEOMANTAS_3',
-            onEachFeature: pop_GEOMANTAS_3,
-            styles: [style_GEOMANTAS_3_0,style_GEOMANTAS_3_1,]
+            dataVar: 'json_GEOMANTAS_4',
+            layerName: 'layer_GEOMANTAS_4',
+            pane: 'pane_GEOMANTAS_4',
+            onEachFeature: pop_GEOMANTAS_4,
+            styles: [style_GEOMANTAS_4_0,style_GEOMANTAS_4_1,]
         });
-        bounds_group.addLayer(layer_GEOMANTAS_3);
-        map.addLayer(layer_GEOMANTAS_3);
-        function pop_Trajetopercorrido_4(feature, layer) {
+        bounds_group.addLayer(layer_GEOMANTAS_4);
+        map.addLayer(layer_GEOMANTAS_4);
+        function pop_Trajetopercorrido_5(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if (typeof layer.closePopup == 'function') {
@@ -218,9 +227,9 @@
             });
         }
 
-        function style_Trajetopercorrido_4_0() {
+        function style_Trajetopercorrido_5_0() {
             return {
-                pane: 'pane_Trajetopercorrido_4',
+                pane: 'pane_Trajetopercorrido_5',
                 opacity: 1,
                 color: 'rgba(247,247,247,1.0)',
                 dashArray: '',
@@ -231,21 +240,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Trajetopercorrido_4');
-        map.getPane('pane_Trajetopercorrido_4').style.zIndex = 404;
-        map.getPane('pane_Trajetopercorrido_4').style['mix-blend-mode'] = 'normal';
-        var layer_Trajetopercorrido_4 = new L.geoJson(json_Trajetopercorrido_4, {
+        map.createPane('pane_Trajetopercorrido_5');
+        map.getPane('pane_Trajetopercorrido_5').style.zIndex = 405;
+        map.getPane('pane_Trajetopercorrido_5').style['mix-blend-mode'] = 'normal';
+        var layer_Trajetopercorrido_5 = new L.geoJson(json_Trajetopercorrido_5, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Trajetopercorrido_4',
-            layerName: 'layer_Trajetopercorrido_4',
-            pane: 'pane_Trajetopercorrido_4',
-            onEachFeature: pop_Trajetopercorrido_4,
-            style: style_Trajetopercorrido_4_0,
+            dataVar: 'json_Trajetopercorrido_5',
+            layerName: 'layer_Trajetopercorrido_5',
+            pane: 'pane_Trajetopercorrido_5',
+            onEachFeature: pop_Trajetopercorrido_5,
+            style: style_Trajetopercorrido_5_0,
         });
-        bounds_group.addLayer(layer_Trajetopercorrido_4);
-        map.addLayer(layer_Trajetopercorrido_4);
-        function pop_MapeamentoNoite_5(feature, layer) {
+        bounds_group.addLayer(layer_Trajetopercorrido_5);
+        map.addLayer(layer_Trajetopercorrido_5);
+        function pop_MapeamentoNoite_6(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if (typeof layer.closePopup == 'function') {
@@ -276,10 +285,10 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_MapeamentoNoite_5_0(feature) {
+        function style_MapeamentoNoite_6_0(feature) {
             if (feature.properties['temperature'] >= 24.990000 && feature.properties['temperature'] <= 27.690000 ) {
                 return {
-                pane: 'pane_MapeamentoNoite_5',
+                pane: 'pane_MapeamentoNoite_6',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -290,7 +299,7 @@
             }
             if (feature.properties['temperature'] >= 27.690000 && feature.properties['temperature'] <= 27.950000 ) {
                 return {
-                pane: 'pane_MapeamentoNoite_5',
+                pane: 'pane_MapeamentoNoite_6',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -301,7 +310,7 @@
             }
             if (feature.properties['temperature'] >= 27.950000 && feature.properties['temperature'] <= 28.230000 ) {
                 return {
-                pane: 'pane_MapeamentoNoite_5',
+                pane: 'pane_MapeamentoNoite_6',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -312,7 +321,7 @@
             }
             if (feature.properties['temperature'] >= 28.230000 && feature.properties['temperature'] <= 29.240000 ) {
                 return {
-                pane: 'pane_MapeamentoNoite_5',
+                pane: 'pane_MapeamentoNoite_6',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -322,27 +331,27 @@
             }
             }
         }
-        map.createPane('pane_MapeamentoNoite_5');
-        map.getPane('pane_MapeamentoNoite_5').style.zIndex = 405;
-        map.getPane('pane_MapeamentoNoite_5').style['mix-blend-mode'] = 'normal';
-        var layer_MapeamentoNoite_5 = new L.geoJson(json_MapeamentoNoite_5, {
+        map.createPane('pane_MapeamentoNoite_6');
+        map.getPane('pane_MapeamentoNoite_6').style.zIndex = 406;
+        map.getPane('pane_MapeamentoNoite_6').style['mix-blend-mode'] = 'normal';
+        var layer_MapeamentoNoite_6 = new L.geoJson(json_MapeamentoNoite_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_MapeamentoNoite_5',
-            layerName: 'layer_MapeamentoNoite_5',
-            pane: 'pane_MapeamentoNoite_5',
-            onEachFeature: pop_MapeamentoNoite_5,
+            dataVar: 'json_MapeamentoNoite_6',
+            layerName: 'layer_MapeamentoNoite_6',
+            pane: 'pane_MapeamentoNoite_6',
+            onEachFeature: pop_MapeamentoNoite_6,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_MapeamentoNoite_5_0(feature));
+                return L.circleMarker(latlng, style_MapeamentoNoite_6_0(feature));
             },
         });
-        bounds_group.addLayer(layer_MapeamentoNoite_5);
-        map.addLayer(layer_MapeamentoNoite_5);
-        function pop_MapeamentoTarde_6(feature, layer) {
+        bounds_group.addLayer(layer_MapeamentoNoite_6);
+        map.addLayer(layer_MapeamentoNoite_6);
+        function pop_MapeamentoTarde_7(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if (typeof layer.closePopup == 'function') {
@@ -373,10 +382,10 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_MapeamentoTarde_6_0(feature) {
+        function style_MapeamentoTarde_7_0(feature) {
             if (feature.properties['temperature'] >= 29.040000 && feature.properties['temperature'] <= 30.450000 ) {
                 return {
-                pane: 'pane_MapeamentoTarde_6',
+                pane: 'pane_MapeamentoTarde_7',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -387,7 +396,7 @@
             }
             if (feature.properties['temperature'] >= 30.450000 && feature.properties['temperature'] <= 30.940000 ) {
                 return {
-                pane: 'pane_MapeamentoTarde_6',
+                pane: 'pane_MapeamentoTarde_7',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -398,7 +407,7 @@
             }
             if (feature.properties['temperature'] >= 30.940000 && feature.properties['temperature'] <= 31.720000 ) {
                 return {
-                pane: 'pane_MapeamentoTarde_6',
+                pane: 'pane_MapeamentoTarde_7',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -409,7 +418,7 @@
             }
             if (feature.properties['temperature'] >= 31.720000 && feature.properties['temperature'] <= 34.090000 ) {
                 return {
-                pane: 'pane_MapeamentoTarde_6',
+                pane: 'pane_MapeamentoTarde_7',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -419,27 +428,27 @@
             }
             }
         }
-        map.createPane('pane_MapeamentoTarde_6');
-        map.getPane('pane_MapeamentoTarde_6').style.zIndex = 406;
-        map.getPane('pane_MapeamentoTarde_6').style['mix-blend-mode'] = 'normal';
-        var layer_MapeamentoTarde_6 = new L.geoJson(json_MapeamentoTarde_6, {
+        map.createPane('pane_MapeamentoTarde_7');
+        map.getPane('pane_MapeamentoTarde_7').style.zIndex = 407;
+        map.getPane('pane_MapeamentoTarde_7').style['mix-blend-mode'] = 'normal';
+        var layer_MapeamentoTarde_7 = new L.geoJson(json_MapeamentoTarde_7, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_MapeamentoTarde_6',
-            layerName: 'layer_MapeamentoTarde_6',
-            pane: 'pane_MapeamentoTarde_6',
-            onEachFeature: pop_MapeamentoTarde_6,
+            dataVar: 'json_MapeamentoTarde_7',
+            layerName: 'layer_MapeamentoTarde_7',
+            pane: 'pane_MapeamentoTarde_7',
+            onEachFeature: pop_MapeamentoTarde_7,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_MapeamentoTarde_6_0(feature));
+                return L.circleMarker(latlng, style_MapeamentoTarde_7_0(feature));
             },
         });
-        bounds_group.addLayer(layer_MapeamentoTarde_6);
-        map.addLayer(layer_MapeamentoTarde_6);
-        function pop_MapeamentoManh_7(feature, layer) {
+        bounds_group.addLayer(layer_MapeamentoTarde_7);
+        map.addLayer(layer_MapeamentoTarde_7);
+        function pop_MapeamentoManh_8(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if (typeof layer.closePopup == 'function') {
@@ -470,10 +479,10 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_MapeamentoManh_7_0(feature) {
+        function style_MapeamentoManh_8_0(feature) {
             if (feature.properties['temperature'] >= 25.990000 && feature.properties['temperature'] <= 26.740000 ) {
                 return {
-                pane: 'pane_MapeamentoManh_7',
+                pane: 'pane_MapeamentoManh_8',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -484,7 +493,7 @@
             }
             if (feature.properties['temperature'] >= 26.740000 && feature.properties['temperature'] <= 27.130000 ) {
                 return {
-                pane: 'pane_MapeamentoManh_7',
+                pane: 'pane_MapeamentoManh_8',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -495,7 +504,7 @@
             }
             if (feature.properties['temperature'] >= 27.130000 && feature.properties['temperature'] <= 27.860000 ) {
                 return {
-                pane: 'pane_MapeamentoManh_7',
+                pane: 'pane_MapeamentoManh_8',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -506,7 +515,7 @@
             }
             if (feature.properties['temperature'] >= 27.860000 && feature.properties['temperature'] <= 32.190000 ) {
                 return {
-                pane: 'pane_MapeamentoManh_7',
+                pane: 'pane_MapeamentoManh_8',
                 radius: 4.0,
                 stroke: false,
                 fill: true,
@@ -516,26 +525,26 @@
             }
             }
         }
-        map.createPane('pane_MapeamentoManh_7');
-        map.getPane('pane_MapeamentoManh_7').style.zIndex = 407;
-        map.getPane('pane_MapeamentoManh_7').style['mix-blend-mode'] = 'normal';
-        var layer_MapeamentoManh_7 = new L.geoJson(json_MapeamentoManh_7, {
+        map.createPane('pane_MapeamentoManh_8');
+        map.getPane('pane_MapeamentoManh_8').style.zIndex = 408;
+        map.getPane('pane_MapeamentoManh_8').style['mix-blend-mode'] = 'normal';
+        var layer_MapeamentoManh_8 = new L.geoJson(json_MapeamentoManh_8, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_MapeamentoManh_7',
-            layerName: 'layer_MapeamentoManh_7',
-            pane: 'pane_MapeamentoManh_7',
-            onEachFeature: pop_MapeamentoManh_7,
+            dataVar: 'json_MapeamentoManh_8',
+            layerName: 'layer_MapeamentoManh_8',
+            pane: 'pane_MapeamentoManh_8',
+            onEachFeature: pop_MapeamentoManh_8,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_MapeamentoManh_7_0(feature));
+                return L.circleMarker(latlng, style_MapeamentoManh_8_0(feature));
             },
         });
-        bounds_group.addLayer(layer_MapeamentoManh_7);
-        map.addLayer(layer_MapeamentoManh_7);
+        bounds_group.addLayer(layer_MapeamentoManh_8);
+        map.addLayer(layer_MapeamentoManh_8);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -548,14 +557,15 @@
         .title += 'Search for a place';
         var overlaysTree = [
         {label: '<b>ROTA 3</b>', selectAllCheckbox: true, children: [
-            {label: 'Mapeamento - Manhã<br /><table><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_7_259926740.png" /></td><td>25,99 - 26,74</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_7_267427131.png" /></td><td>26,74 - 27,13</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_7_271327862.png" /></td><td>27,13 - 27,86</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_7_278632193.png" /></td><td>27,86 - 32,19</td></tr></table>', layer: layer_MapeamentoManh_7},
-            {label: 'Mapeamento - Tarde<br /><table><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_6_290430450.png" /></td><td>29,04 - 30,45</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_6_304530941.png" /></td><td>30,45 - 30,94</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_6_309431722.png" /></td><td>30,94 - 31,72</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_6_317234093.png" /></td><td>31,72 - 34,09</td></tr></table>', layer: layer_MapeamentoTarde_6},
-            {label: 'Mapeamento - Noite<br /><table><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_5_249927690.png" /></td><td>24,99 - 27,69</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_5_276927951.png" /></td><td>27,69 - 27,95</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_5_279528232.png" /></td><td>27,95 - 28,23</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_5_282329243.png" /></td><td>28,23 - 29,24</td></tr></table>', layer: layer_MapeamentoNoite_5},
-            {label: '<img src="legend/Trajetopercorrido_4.png" /> Trajeto percorrido', layer: layer_Trajetopercorrido_4},]},
+            {label: 'Mapeamento - Manhã<br /><table><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_8_259926740.png" /></td><td>25,99 - 26,74</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_8_267427131.png" /></td><td>26,74 - 27,13</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_8_271327862.png" /></td><td>27,13 - 27,86</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoManh_8_278632193.png" /></td><td>27,86 - 32,19</td></tr></table>', layer: layer_MapeamentoManh_8},
+            {label: 'Mapeamento - Tarde<br /><table><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_7_290430450.png" /></td><td>29,04 - 30,45</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_7_304530941.png" /></td><td>30,45 - 30,94</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_7_309431722.png" /></td><td>30,94 - 31,72</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoTarde_7_317234093.png" /></td><td>31,72 - 34,09</td></tr></table>', layer: layer_MapeamentoTarde_7},
+            {label: 'Mapeamento - Noite<br /><table><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_6_249927690.png" /></td><td>24,99 - 27,69</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_6_276927951.png" /></td><td>27,69 - 27,95</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_6_279528232.png" /></td><td>27,95 - 28,23</td></tr><tr><td style="text-align: center;"><img src="legend/MapeamentoNoite_6_282329243.png" /></td><td>28,23 - 29,24</td></tr></table>', layer: layer_MapeamentoNoite_6},
+            {label: '<img src="legend/Trajetopercorrido_5.png" /> Trajeto percorrido', layer: layer_Trajetopercorrido_5},]},
         {label: '<b>Consulta CODESAL</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/GEOMANTAS_3.png" /> GEOMANTAS ', layer: layer_GEOMANTAS_3},]},
-            {label: "Google Satellite", layer: layer_GoogleSatellite_2},
-            {label: "NDVI - 09-04-2017", layer: layer_NDVI09042017_1},
+            {label: '<img src="legend/GEOMANTAS_4.png" /> GEOMANTAS ', layer: layer_GEOMANTAS_4},]},
+            {label: "Google Satellite", layer: layer_GoogleSatellite_3},
+            {label: "NDVI - 09-04-2017", layer: layer_NDVI09042017_2},
+            {label: "NDVI_2 - 09-04-2017", layer: layer_NDVI_209042017_1},
             {label: "NDVI - 17-01-2025", layer: layer_NDVI17012025_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
